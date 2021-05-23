@@ -1,0 +1,414 @@
+/* slider */
+
+.banner-section {
+    margin-bottom: 20px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.slick-dots button {
+    padding: 0;
+    font-size: 0;
+    margin: 0;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #555554;
+    background-color: #fff;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.slick-active button {
+    background-color: #fff;
+    border: 2px solid #ffffff;
+}
+
+.slider__item {
+    position: relative;
+}
+
+.slider__info {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.slider__info>h2 {
+    font-size: 70px;
+}
+
+.slider__info>p {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slider__but {
+    border: 2px solid rgba(30, 105, 204, 1);
+    padding: 10px;
+    background-color: rgba(30, 105, 204, 1);
+    border-radius: 10%;
+    color: #fff;
+}
+
+.slider__item>img {
+    filter: brightness(.7);
+}
+
+
+/* Категории */
+
+.category-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category__images-border {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(226, 220, 220);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(226, 220, 220);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .3s;
+    background-color: #eff1f0;
+}
+
+.category__type:hover>.category__images-border {
+    border: 2px solid rgb(30, 105, 204);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(30, 105, 204);
+}
+
+.category__type {
+    text-align: center;
+    margin-right: 40px;
+}
+
+.category__images-border>img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Каталог */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid .catalog__item {
+    margin: 4px;
+    width: calc(33% - 4 * 2px);
+    height: auto;
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+    .grid .catalog__item {
+        width: calc(45% - 2 * 2px);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid .catalog__item {
+        width: calc(80% - 1 * 2px);
+        height: auto;
+        overflow: hidden;
+    }
+    .catalog__item-img {
+        height: 10%;
+        width: 100%;
+    }
+    .grid {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.catalog {
+    margin-bottom: 30px;
+}
+
+.catalog__header {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.catalog__items {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 0 -10px;
+}
+
+.news__item-header {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.news__item-header-tem {
+    color: rgb(30, 105, 204);
+}
+
+.catalog__item {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.catalog__item-info {
+    position: relative;
+}
+
+.catalog__item-img {
+    transition: all .4s;
+}
+
+.catalog__item-img>img {
+    height: auto;
+    width: 100%;
+}
+
+.catalog__item-hidden {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    transition: all .4s;
+    z-index: 10;
+}
+
+.but__shop {
+    padding-right: 40px;
+    padding-left: 40px;
+    z-index: 10;
+}
+
+.but__shop:hover {
+    border: 2px solid rgba(30, 105, 204, .8);
+    background-color: rgba(30, 105, 204, .8);
+}
+
+.catalog__item-info:hover>.catalog__item-img {
+    opacity: .1;
+}
+
+.catalog__item-info:hover>.catalog__item-hidden {
+    opacity: 1;
+}
+
+
+/* Преимущества */
+
+.powers__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.powers__item-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.powers__item-flex>img {
+    margin-right: 20px;
+}
+
+.powers {
+    margin-bottom: 40px;
+}
+
+
+/* Новые товары */
+
+.new {
+    margin-bottom: 60px;
+}
+
+.new__items-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.new__item {
+    width: 45%;
+    height: auto;
+    position: relative;
+}
+
+.new__item-text {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    z-index: 10;
+}
+
+.new__item-img {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.new__item-img>img {
+    transition: all .5s;
+}
+
+.new__item-img:hover>img {
+    transform: scale(1.2);
+}
+
+
+/* Статьи */
+
+.state {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 60px;
+    font-size: 15px;
+}
+
+.state__item1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.state__item2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.state__item2 div:nth-child(1) {
+    order: 1;
+}
+
+.state__img1 {
+    margin-right: 40px;
+}
+
+.state__img2 {
+    margin-left: 40px;
+}
+
+
+/* Новости */
+
+.news {
+    margin-bottom: 60px;
+}
+
+.news__flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -25px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.news__item {
+    width: 100%;
+    margin: 0 25px;
+}
+
+.news__item-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news__item-title-text {
+    font-size: 15px;
+}
+
+.news__item-header {
+    margin-bottom: 10px;
+}
+
+
+/* Текстовый блок */
+
+.text__box {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 50px;
+    border-left: 2px solid rgb(179, 179, 179);
+    border-right: 2px solid rgb(179, 179, 179);
+}
+
+
+/* Инстаграмм */
+
+.insta {
+    margin-bottom: 60px;
+}
+
+.insta__header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.insta__flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.insta__item {
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.insta__item>img:hover {
+    transform: scale(1.2);
+}
+
+.insta__item>img {
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+
+/* Каталог */
+
+.product__catalog {
+    margin-bottom: 50px;
+}

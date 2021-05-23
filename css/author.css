@@ -1,0 +1,123 @@
+.form__cont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__auth>form,
+.form__reg>form {
+    display: flex;
+    flex-direction: column;
+    color: rgb(54, 53, 53);
+}
+
+.form__reg,
+.form__auth {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 45%;
+}
+
+.form__auth>form>label,
+.form__reg>form>label,
+.form__auth>form>input,
+.form__reg>form>input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form__auth>form>input,
+.form__reg>form>input,
+.form__reg>form>select {
+    height: 30px;
+    border: 1px solid rgb(167, 167, 167);
+    background-color: rgb(243, 243, 243);
+}
+
+.form__auth>form>input:focus,
+.form__reg>form>input:focus,
+.form__reg>form>select:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+.form__auth>form>label>span,
+.form__reg>form>label>span {
+    color: red;
+}
+
+.form__auth>form>input[type="submit"],
+.form__reg>form>input[type="submit"] {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(30, 105, 204, .8);
+    height: 40px;
+}
+
+.form__auth>form>input[type="submit"]:hover,
+.form__reg>form>input[type="submit"]:hover {
+    background-color: rgba(30, 105, 204, 1);
+    cursor: pointer;
+}
+
+
+/* Обратная связь */
+
+.form__obr>form {
+    display: flex;
+    flex-direction: column;
+    color: rgb(54, 53, 53);
+}
+
+.form__obr {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 100%;
+}
+
+.form__obr>form>label,
+.form__obr>form>input,
+.form__obr>form>textarea {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form__obr>form>input {
+    height: 30px;
+    border: 1px solid rgb(167, 167, 167);
+    background-color: rgb(243, 243, 243);
+}
+
+.form__obr>form>textarea {
+    border: 1px solid rgb(167, 167, 167);
+    background-color: rgb(243, 243, 243);
+}
+
+.form__obr>form>input:focus,
+.form__obr>form>textarea:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+.form__obr>form>label>span {
+    color: red;
+}
+
+.form__obr>form>input[type="submit"] {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(30, 105, 204, .8);
+    height: 40px;
+}
+
+.form__obr>form>input[type="submit"]:hover {
+    background-color: rgba(30, 105, 204, 1);
+    cursor: pointer;
+}
+
+.form__obr>h2,
+.form__auth>h2,
+.form__reg>h2 {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewTone</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_query.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <!-- Preload -->
+    <div id="preloader">
+        <div id="preloader_preload"></div>
+    </div>
+    <header class="header">
+        <!-- Первая часть заголовка -->
+        <div class="header__one">
+            <div class="container">
+                <div class="header__one-flex">
+                    <div class="header__one-right">
+                        <a href="pages/catalog.html" class="header__one-links">Каталог</a>
+                        <a href="pages/blog.html" class="header__one-links">Блог</a>
+                        <a href="pages/cab.html" class="header__one-links">Личный кабинет</a>
+                        <a href="pages/obr.html" class="header__one-links">Обратная связь</a>
+                    </div>
+                    <div class="header__one-left">
+                        <p>Ежедневно с 8:00 до 20:00</p>
+                        <select class="lang-select">
+                        <option selected> RU </option>
+                        <option> EN </option>
+                        <option> KZ </option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Вторая часть заголовка -->
+
+        <div class="header__two">
+            <div class="container">
+                <div class="header__two-flex">
+                    <div class="burger__innener">
+                        <p class="menu__header-burger">
+                            Vty.
+                        </p>
+                        <div class="burger">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="header__two-left">
+                        <a href="index.html"><img src="images/logotype.jpg" alt=""></a>
+                    </div>
+                    <div class="header__two-center">
+                        <p><i class="fas fa-phone"></i><a href="#">+7(777)123-45-67</a></p>
+                        <p><i class="fas fa-phone"></i><a href="#">+7(777)123-45-67</a></p>
+                    </div>
+                    <div class="header__two-right">
+                        <a class="search__link" href="#" onclick="openSearch()"><i class="fas fa-search"></i><span>Поиск</span></a>
+                        <a class="acc__link" href="pages/authoriz.html"><i class="fa fa-user"></i><span>Аккаунт</span></a>
+                        <a class="sr__link" href="#"><i class="far fa-chart-bar"></i><span>Сравнение</span></a>
+                        <a class="bas__link" href="#" class="bask"><i class="fas fa-shopping-basket"></i><span>Корзина</span></a>
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                            <div class="overlay-content">
+                                <form action="">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- Меню бургер -->
+
+
+        <!-- Третья часть заголовка -->
+        <div class="header__three">
+            <div class="container">
+                <ul class="header__three-flex">
+                    <li class="logo__burg">
+                        <a href="index.html"><img src="images/logotype.jpg" alt=""></a>
+                    </li>
+
+                    <li class="header__three-link">
+                        <a data-list="0" href="pages/svithots.html">Свитшоты</a>
+                    </li>
+                    <li class="header__three-link">
+                        <a data-list="1" href="pages/bricks.html">Брюки</a>
+                    </li>
+                    <li class="header__three-link">
+                        <a data-list="2" href="pages/sumki.html">Сумки</a>
+                    </li>
+                    <li class="header__three-link">
+                        <a data-list="3" href="pages/plat.html">Платья</a>
+                    </li>
+                    <li class="header__three-link">
+                        <a data-list="4" href="pages/futb.html">Футболки</a>
+                    </li>
+                    <li class="header__three-link">
+                        <a data-list="5" href="pages/akses.html">Аксессуары</a>
+                    </li>
+                    <li class="header__three-link">
+                        <a data-list="6" href="pages/kross.html">Кроссовки</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Слайдер -->
+    <section class="banner-section">
+        <div class="banner-section__inner">
+            <ul class="slider">
+                <li class="slider__item">
+                    <div class="slider__info">
+                        <h2>Выгодные акции и бонусы</h2>
+                        <p>Выгодные акции</p>
+                        <a href="#" class="slider__but">Подробнее</a>
+                    </div>
+                    <img src="images/slider_1.jpg" />
+                </li>
+                <li class="slider__item">
+                    <div class="slider__info">
+                        <h2>Поступление новых товаров</h2>
+                        <p>Новые товары</p>
+                        <a href="#" class="slider__but">Подробнее</a></div>
+                    <img src="images/slider_1.jpg" />
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Категории -->
+    <section class="category product__catalog">
+        <div class="container">
+            <div class="category-flex">
+                <a href="pages/svithots.html">
+                    <div class="category__type">
+                        <div class="category__images-border"><img src="images/CAT1.jpg" alt=""></div>
+                        <p>Свитшоты</p>
+                    </div>
+                </a>
+                <a href="pages/bricks.html">
+                    <div class="category__type">
+                        <div class="category__images-border"><img src="images/CAT2.jpg" alt=""></div>
+                        <p>Брюки</p>
+                    </div>
+                </a>
+                <a href="pages/sumki.html">
+                    <div class="category__type">
+                        <div class="category__images-border"><img src="images/CAT3.jpg" alt=""></div>
+                        <p>Сумки</p>
+                    </div>
+                </a>
+                <a href="pages/plat.html">
+                    <div class="category__type">
+                        <div class="category__images-border"><img src="images/CAT4.jpg" alt=""></div>
+                        <p>Платья</p>
+                    </div>
+                </a>
+                <a href="pages/futb.html">
+                    <div class="category__type">
+                        <div class="category__images-border"><img src="images/CAT5.jpg" alt=""></div>
+                        <p>Футболки</p>
+                    </div>
+                </a>
+                <a href="pages/akses.html">
+                    <div class="category__type">
+                        <div class="category__images-border"><img src="images/CAT6.jpg" alt=""></div>
+                        <p>Аксессуары</p>
+                    </div>
+                </a>
+                <a href="pages/kross.html">
+                    <div class="category__type last">
+                        <div class="category__images-border "><img src="images/CAT7.jpg" alt=""></div>
+                        <p>Кроссовки</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Каталог -->
+    <section class="catalog">
+        <div class="container">
+            <h2 class="catalog__header">Каталог</h2>
+            <div class="grid">
+                <div class="catalog__item">
+                    <div class="catalog__item-info">
+                        <div class="catalog__item-hidden">
+                            <a href="#">Брюки голубые</a>
+                            <p>2500 тенге</p>
+                            <a href="#" class="slider__but but__shop">Купить</a>
+                        </div>
+                        <div class="catalog__item-img">
+                            <img class="img__hover" src="images/Брюки/Br1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-info">
+                        <div class="catalog__item-hidden">
+                            <a href="#">Брюки серые</a>
+                            <p>2500 тенге</p>
+                            <a href="#" class="slider__but but__shop">Купить</a>
+                        </div>
+                        <div class="catalog__item-img">
+                            <img class="img__hover" src="images/Брюки/Br2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-info">
+                        <div class="catalog__item-hidden">
+                            <a href="#">Брюки черные</a>
+                            <p>2500 тенге</p>
+                            <a href="#" class="slider__but but__shop">Купить</a>
+                        </div>
+                        <div class="catalog__item-img">
+                            <img class="img__hover" src="images/Брюки/Br3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="powers">
+        <div class="container">
+            <div class="powers__flex">
+                <div class="powers__item-flex">
+                    <img src="images/pow1.png" alt="">
+                    <p>ЛУЧШЕЕ КАЧЕСТВО</p>
+                </div>
+                <div class="powers__item-flex">
+                    <img src="images/pow2.png" alt="">
+                    <p>БЕСПЛАТНАЯ <br> ДОСТАВКА</p>
+                </div>
+                <div class="powers__item-flex">
+                    <img src="images/pow2.png" alt="">
+                    <p>НАКОПИТЕЛЬНАЯ <br> СИСТЕМА <br> БОНУСОВ</p>
+                </div>
+                <div class="powers__item-flex">
+                    <img src="images/pow1.png" alt="">
+                    <p>НАТУРАЛЬНЫЕ <br> ТКАНИ</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="new">
+        <div class="container">
+            <div class="new__items-flex">
+                <div class="new__item">
+                    <div class="new__item-text">
+                        <h2>Новое <br> поступление <br> спортивной обуви</h2>
+                        <p>Обувь</p>
+                        <a href="#" class="slider__but but__shop">Подробнее</a>
+                    </div>
+                    <div class="new__item-img">
+                        <img src="images/New1.jpg" alt="" width="100%" height="auto">
+                    </div>
+                </div>
+                <div class="new__item">
+                    <div class="new__item-text">
+                        <h2>Перчатки, ремни, <br> и многое другое</h2>
+                        <p>Аксессуары</p>
+                        <a href="#" class="slider__but but__shop">Подробнее</a>
+                    </div>
+                    <div class="new__item-img">
+                        <img src="images/New2.jpg" alt="" width="100%" height="auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="state">
+        <div class="container">
+            <div class="state__item1">
+                <div class="state__img1"><img src="images/state__1_.jpg" alt=""></div>
+                <div class="state__text">Несмотря на то, что мода менять своих «любимчиков» как перчатки, существуют вещи, которые надолго задержатся в списке трендов. Novate.ru предлагает ознакомиться со списком этой одежды и сделать грамотное вложение в свой модный и стильный
+                    гардероб. Только помните: на нарядах, которые вы планируете носить не один год, экономить нельзя.</div>
+            </div>
+            <div class="state__item2">
+                <div class="state__img2">
+                    <img src="images/state__2_.jpg" alt="">
+                </div>
+                <div class="state__text">Самым лучшем решением для лета и осени будет джинсовая юбка миди. Однако, если вы хотите продемонстрировать миру свои стройные ножки, то можно подобрать модель и выше колена. Главное – не переборщить, ведь ультракороткие вещи уже давно
+                    перешли из разряда модных в разряд вульгарных. Юбка из денима станет ключевым элементом вашего базового гардероба: в пар с блузкой подойдет для офиса, в комплекте с кроссовками и свитшотом – для прогулки, в тандеме с босоножками и
+                    топом – для свидания.</div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <h2 class="news__header">Последние новости</h2>
+            <hr>
+            <div class="news__flex">
+                <div class="news__item">
+                    <div class="news__item-header">
+                        <div class="news__item-header-tem">SOCCER</div>
+                        <div class="news__item-header-date">3 июня 2021</div>
+                    </div>
+                    <img class="news__item-img" src="images/news1.jpg" alt="" width="100%" height="auto">
+                    <div class="news__item-title">Как делают футбольную форму</div>
+                    <div class="news__item-title-text">В нашем блоге постоянно красуется экипировка профессиональных футболистов. Все радостно оценивают помятый банан «Арсенала» и кликают на новые бутсы Роналду. А потом ваши немногочисленные “где купить”? И не напишешь, ведь, “ответили
+                        в личку”, ибо купить нельзя. Поэтому сегодня о насущном и доступном: о форме для любительских команд.</div>
+                </div>
+                <div class="news__item">
+                    <div class="news__item-header">
+                        <div class="news__item-header-tem">FOOD</div>
+                        <div class="news__item-header-date">3 июня 2021</div>
+                    </div>
+                    <img class="news__item-img" src="images/news2.jpg" alt="" width="100%" height="auto">
+                    <div class="news__item-title">5 самых интересных городов Великобритании и Ирландии</div>
+                    <div class="news__item-title-text">В этой статье я расскажу вам про 5 городов Британских островов, которые рекомендую для посещения. Так уж сложилось, что Великобритания и Ирландия были практически неразлучны на протяжении всей истории. Поэтому и я не буду разделять
+                        их на две разные статьи, а рассмотрю в одной.</div>
+                </div>
+                <div class="news__item">
+                    <div class="news__item-header">
+                        <div class="news__item-header-tem">FOOD</div>
+                        <div class="news__item-header-date">3 июня 2021</div>
+                    </div>
+                    <img class="news__item-img" src="images/news3.jpg" alt="" width="100%" height="auto">
+                    <div class="news__item-title">Вы и Ваши домашние не устоите от такого завтрака!</div>
+                    <div class="news__item-title-text">Про данный рецепт нам рассказала наша читательница. По ее словам, блюдо идеально подходит для завтрака, т.к помогает правильно и вкусно накормить всю ее большую семью. При этом домочадцам хватает подобного завтрака до обеда.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text">
+        <div class="container">
+            <div class="text__box">
+                <h2>Как выбрать обувь?</h2>
+                <p>Выбирайте обувь на достаточно мягкой, гибкой подошве. Согните туфли в руках. У качественной обуви подошва легко гнется, а верх ботинка не деформируется слишком сильно. На очень тонкой подошве удобно ходить только по ровному полу, прогулки
+                    в такой обуви по асфальту вряд ли можно назвать приятными — нога будет ощущать каждый камешек. На каждый день лучше всего предпочесть обувь на небольшом широком каблуке. Страсть к высоким каблукам может отрицательно сказаться на вашем
+                    здоровье.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="insta">
+        <div class="container">
+            <div class="insta__header"><a href="#">Instagram @my-instagram</a></div>
+            <div class="insta__flex">
+                <div class="insta__item"><img src="images/inst1.jpg" alt=""></div>
+                <div class="insta__item"><img src="images/inst2.jpg" alt=""></div>
+                <div class="insta__item"><img src="images/inst3.jpg" alt=""></div>
+                <div class="insta__item"><img src="images/inst4.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <hr>
+            <div class="footer__flex">
+                <div class="footer__left">
+                    <img src="images/logotype.jpg" alt="">
+                    <div class="menu__footer">
+                        <a href="#">О МАГАЗИНЕ</a>
+                        <a href="#">ДОСТАВКА</a>
+                        <a href="#">ОПЛАТА</a>
+                    </div>
+
+                </div>
+                <div class="footer__right">
+                    <div class="social">
+                        <a href="#"><img src="images/free-icon-instagram-1384031.png" alt=""></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><img src="images/free-icon-youtube-160205.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><img src="images/free-icon-facebook-1051309.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><img src="images/free-icon-twitter-1051331.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://kit.fontawesome.com/ad00a0aa0d.js" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/search.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/script.js "></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>

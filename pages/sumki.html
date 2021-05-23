@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/products-style.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/media_query.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Preload -->
+        <div id="preloader">
+            <div id="preloader_preload"></div>
+        </div>
+        <header class="header">
+            <!-- Первая часть заголовка -->
+            <div class="header__one">
+                <div class="container">
+                    <div class="header__one-flex">
+                        <div class="header__one-right">
+                            <a href="catalog.html" class="header__one-links">Каталог</a>
+                            <a href="blog.html" class="header__one-links">Блог</a>
+                            <a href="cab.html" class="header__one-links">Личный кабинет</a>
+                            <a href="obr.html" class="header__one-links">Обратная связь</a>
+                        </div>
+                        <div class="header__one-left">
+                            <p>Ежедневно с 8:00 до 20:00</p>
+                            <select class="lang-select">
+                            <option selected> RU </option>
+                            <option> EN </option>
+                            <option> KZ </option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Вторая часть заголовка -->
+
+            <div class="header__two">
+                <div class="container">
+                    <div class="header__two-flex">
+                        <div class="burger__innener">
+                            <p class="menu__header-burger">
+                                Vty.
+                            </p>
+                            <div class="burger">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="header__two-left">
+                            <a href="../index.html"><img src="../images/logotype.jpg" alt=""></a>
+                        </div>
+                        <div class="header__two-center">
+                            <p><i class="fas fa-phone"></i><a href="#">+7(777)123-45-67</a></p>
+                            <p><i class="fas fa-phone"></i><a href="#">+7(777)123-45-67</a></p>
+                        </div>
+                        <div class="header__two-right">
+                            <a class="search__link" href="#" onclick="openSearch()"><i class="fas fa-search"></i><span>Поиск</span></a>
+                            <a class="acc__link" href="authoriz.html"><i class="fa fa-user"></i><span>Аккаунт</span></a>
+                            <a class="sr__link" href="#"><i class="far fa-chart-bar"></i><span>Сравнение</span></a>
+                            <a class="bas__link" href="#" class="bask"><i class="fas fa-shopping-basket"></i><span>Корзина</span></a>
+                            <div id="myOverlay" class="overlay">
+                                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                                <div class="overlay-content">
+                                    <form action="">
+                                        <input type="text" placeholder="Search.." name="search">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <!-- Меню бургер -->
+
+
+            <!-- Третья часть заголовка -->
+            <div class="header__three">
+                <div class="container">
+                    <ul class="header__three-flex">
+                        <li class="logo__burg">
+                            <a href="../index.html"><img src="../images/logotype.jpg" alt=""></a>
+                        </li>
+
+                        <li class="header__three-link">
+                            <a data-list="0" href="svithots.html">Свитшоты</a>
+                        </li>
+                        <li class="header__three-link">
+                            <a data-list="1" href="bricks.html">Брюки</a>
+                        </li>
+                        <li class="header__three-link">
+                            <a data-list="2" href="sumki.html">Сумки</a>
+                        </li>
+                        <li class="header__three-link">
+                            <a data-list="3" href="plat.html">Платья</a>
+                        </li>
+                        <li class="header__three-link">
+                            <a data-list="4" href="futb.html">Футболки</a>
+                        </li>
+                        <li class="header__three-link">
+                            <a data-list="5" href="akses.html">Аксессуары</a>
+                        </li>
+                        <li class="header__three-link">
+                            <a data-list="6" href="kross.html">Кроссовки</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="products">
+            <div class="container">
+                <div class="nav"><a href="#">Главная</a> <span> </span> <a href="#">Сумки</a></div>
+                <h2 class="products__header">Сумки</h2>
+                <div class="filter__flex">
+                    <div class="filter__price">
+                        <p class="filter__pricep">Цена</p>
+                        <div class="filter__price-active">
+                            <p>
+                                <label for="amount">Price range:</label>
+                                <input type="text" id="amount" readonly style="border:0; color:rgba(30, 105, 204, 1); font-weight:bold;background-color: rgb(255, 255, 255);">
+                            </p>
+                            <div id="slider-range"></div>
+                            <a href="#" class="slider__but but__shop range_btn">Применить</a>
+                        </div>
+                    </div>
+                    <div class="filter__right">
+                        <div class="filter__name">
+                            <p>По названию</p>
+                            <select name="" id="">
+                            <option value="">Сортировка</option>
+                            <option value="">По возрастанию</option>
+                            <option value="">По убыванию</option>
+                            
+                        </select>
+                        </div>
+                        <div class="filter__size">
+                            <p>Размер</p>
+                            <select name="" id="">
+                            <option selected value="">4</option>
+                            <option value="">35</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                            <option value="">50</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div data-id="0" class="catalog__item">
+                        <div class="catalog__item-info">
+                            <div class="catalog__item-hidden">
+                                <a href="#">Сумка золото</a>
+                                <p>7000 тенге</p>
+                                <a href="#" class="slider__but but__shop">Купить</a>
+                            </div>
+                            <div class="catalog__item-img">
+                                <img class="img__hover" src="../images/Сумки/Sum1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="1" class="catalog__item">
+                        <div class="catalog__item-info">
+                            <div class="catalog__item-hidden">
+                                <a href="#">Сумка серебро</a>
+                                <p>8500 тенге</p>
+                                <a href="#" class="slider__but but__shop">Купить</a>
+                            </div>
+                            <div class="catalog__item-img">
+                                <img class="img__hover" src="../images/Сумки/Sum2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="2" class="catalog__item">
+                        <div class="catalog__item-info">
+                            <div class="catalog__item-hidden">
+                                <a href="#">Сумка золото</a>
+                                <p>10000 тенге</p>
+                                <a href="#" class="slider__but but__shop">Купить</a>
+                            </div>
+                            <div class="catalog__item-img">
+                                <img class="img__hover" src="../images/Сумки/Sum1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <hr>
+            <div class="footer__flex">
+                <div class="footer__left">
+                    <img src="../images/logotype.jpg" alt="">
+                    <div class="menu__footer">
+                        <a href="#">О МАГАЗИНЕ</a>
+                        <a href="#">ДОСТАВКА</a>
+                        <a href="#">ОПЛАТА</a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="social">
+                        <a href="#"><img src="../images/free-icon-instagram-1384031.png" alt=""></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><img src="../images/free-icon-youtube-160205.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><img src="../images/free-icon-facebook-1051309.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><img src="../images/free-icon-twitter-1051331.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/ad00a0aa0d.js" crossorigin="anonymous"></script>
+    <script src="../js/preloader.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>
